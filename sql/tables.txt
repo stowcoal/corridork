@@ -1,0 +1,35 @@
+USE corridork
+
+CREATE TABLE IF NOT EXISTS bars (
+       id    	    	int AUTO_INCREMENT,
+       name		varchar(50),
+       address		varchar(100),
+       phone		varchar(12),
+       mon_open		time,
+       mon_close 	time,
+       tues_open 	time,
+       tues_close 	time,
+       wed_open 	time,
+       wed_close 	time,
+       thurs_open 	time,
+       thurs_close 	time,
+       fri_open 	time,
+       fri_close 	time,
+       sat_open		time,
+       sat_close	time,
+       sun_open		time,
+       sun_close	time,
+       PRIMARY KEY(id)
+);
+
+CREATE TABLE IF NOT EXISTS specials (
+       id    	    	int AUTO_INCREMENT,
+       name		varchar(50),
+       price		decimal(5, 2),
+       item		varchar(50),
+       start		time,
+       end		time,
+       day		int,
+       bar_id		int,
+       PRIMARY KEY(id)
+);

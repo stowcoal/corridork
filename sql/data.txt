@@ -1,0 +1,62 @@
+USE corridork
+
+/*
+INSERT INTO bars (name, address, phone, mon_open, mon_close, tues_open, tues_close,
+       wed_open, wed_close, thurs_open, thurs_close, fri_open, fri_close,
+       sat_open, sat_close, sun_open, sun_close) values
+       ('The Red Baron', '64 16th Ave SW Cedar Rapids IA', '319-265-0000',
+       '12:00:00', '02:00:00', '12:00:00', '02:00:00', '12:00:00', '02:00:00', 
+       '12:00:00', '02:00:00', '12:00:00', '02:00:00', '12:00:00', '02:00:00', 
+       '12:00:00', '02:00:00');
+*/
+
+DELETE FROM specials;
+
+INSERT INTO specials (name, price, item, start, end, day, bar_id) values
+       ('Rockabilly Hoedown', '2.50', 'Tallboys', '', '', 0, 1);
+
+INSERT INTO specials (name, price, item, start, end, day, bar_id) values
+       ('Rockabilly Hoedown', '3.00', 'Bloody Marys', '', '', 0, 1);
+
+INSERT INTO specials (name, price, item, start, end, day, bar_id) values
+       ('Manic Mondays', '8.00', 'Domestic Pitchers', '18:00:00', '01:00:00', 1, 1);
+
+INSERT INTO specials (name, price, item, start, end, day, bar_id) values
+       ('Manic Mondays', '2.00', 'Wells', '18:00:00', '01:00:00', 1, 1);
+       
+INSERT INTO specials (name, price, item, start, end, day, bar_id) values
+       ('Fiesta Night', '3.00', 'Margaritas', '18:00:00', '01:00:00', 2, 1);
+
+INSERT INTO specials (name, price, item, start, end, day, bar_id) values
+       ('Fiesta Night', '2.00', 'Corona or Dos Equis', '18:00:00', '01:00:00', 2, 1);
+
+INSERT INTO specials (name, price, item, start, end, day, bar_id) values
+       ('Fiesta Night', '2.00', 'Off Any Tequila Shots', '18:00:00', '01:00:00', 2, 1);
+
+INSERT INTO specials (name, price, item, start, end, day, bar_id) values
+       ('Wild Wednesday', '2.50', 'Tallboys', '18:00:00', '01:00:00', 3, 1);
+
+INSERT INTO specials (name, price, item, start, end, day, bar_id) values
+       ('Wild Wednesday', '2.00', 'Wells', '18:00:00', '01:00:00', 3, 1);
+
+INSERT INTO specials (name, price, item, start, end, day, bar_id) values
+       ('Wild Wednesday', '3.00', 'Captains', '18:00:00', '01:00:00', 3, 1);
+
+INSERT INTO specials (name, price, item, start, end, day, bar_id) values
+       ('Wild Wednesday', '3.50', 'Bombs', '18:00:00', '01:00:00', 3, 1);
+
+INSERT INTO specials (name, price, item, start, end, day, bar_id) values
+       ('Wild Wednesday', '3.00', 'Red Baron Bombs', '18:00:00', '01:00:00', 3, 1);
+
+INSERT INTO specials (name, price, item, start, end, day, bar_id) values
+       ('Thirsty Thursday', '2.50', 'Tallboys', '18:00:00', '01:00:00', 4, 1);
+
+INSERT INTO specials (name, price, item, start, end, day, bar_id) values
+       ('Thirsty Thursday', '3.00', 'Captains', '18:00:00', '01:00:00', 4, 1);
+
+INSERT INTO specials (name, price, item, start, end, day, bar_id) values
+       ('Thirsty Thursday', '3.50', 'Bombs', '18:00:00', '01:00:00', 4, 1);
+
+INSERT INTO specials (name, price, item, start, end, day, bar_id) values
+       ('Thirsty Thursday', '3.00', 'Red Baron Bombs', '18:00:00', '01:00:00', 4, 1);
+
